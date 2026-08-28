@@ -42,15 +42,7 @@ namespace ControlAsistencia.Api.Repositories
 
         public IEnumerable<Empleado> ObtenerEmpleados()
         {
-            if (_empleados is null)
-            {
-                return new List<Empleado>();
-
-            }
-            else
-            {
                 return _empleados;
-            }
         }
 
         public ActionResult<Empleado> ObtenerEmpleado(int id)
